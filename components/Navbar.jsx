@@ -44,10 +44,15 @@ const Navbar = () => {
             </nav>
         </section>
 
+        {/* FORM */}
+
         {toggleForm && (
                 <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-60 flex justify-center items-center z-50'>
-                    <div className="bg-white p-8 rounded-lg shadow-md">
-                        <div className='flex justify-end items-start mb-6button'>
+
+                    {/* DESKTOP */}
+                    <div className="bg-white p-8 rounded-lg shadow-md relative hidden lg:block">
+
+                        <div className='flex justify-end items-start'>
                             <Image 
                                 src="/assets/images/x.png"
                                 width={30}
@@ -58,7 +63,56 @@ const Navbar = () => {
                             />
                         </div>
                         
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum excepturi laudantium delectus quia facilis, reiciendis ipsum voluptatibus iusto sint alias, debitis aperiam odit blanditiis libero animi, non asperiores obcaecati maiores!</p>
+                        <div className='flex justify-between px-5 py-3'>
+                            {/* Nachricht Block */}
+                            <div className='bg-gray-900 text-whitesmoke w-3/6 rounded-l-lg'>
+                                <h2 className='font-semibold text-3xl'>Nachricht</h2>
+                                <form action="https://formsubmit.co/alex.wirschke18@gmail.com" method='POST'>
+                                    <div>
+                                        <input type="text" placeholder='Name' required className='input-all'/>
+                                    </div>
+
+                                    <div>
+                                        <input type="text" placeholder='Email' required className='input-all'/>
+                                    </div>
+
+                                    <div>
+                                        <input type="text" placeholder='Betreff' required className='input-all'/>
+                                    </div>
+
+                                    <div>
+                                        <textarea placeholder='Nachricht' name="" id="" cols="30" rows="10" required className='bg-transparent'></textarea>
+                                    </div>
+
+                                    <div>
+                                        <button type='submit'>Senden</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                            {/* Kontakt Block */}
+                            <div className='bg-zinc-900 text-whitesmoke w-3/6 rounded-r-lg'>
+                                <h2 className='font-semibold text-3xl'>Kontakt Info</h2>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    {/* MOBILE */}
+                    <div className='lg:hidden bg-white p-8 rounded-lg shadow-md relative'>
+
+                        <div className='flex justify-end items-start'>
+                            <Image 
+                                src="/assets/images/x.png"
+                                width={30}
+                                height={30}
+                                alt='close icon'
+                                onClick={() => setToggleForm(false)}
+                                className='cursor-pointer'
+                            />
+                        </div>
 
                     </div>
                 </div>
