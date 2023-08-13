@@ -7,7 +7,7 @@ const RootLayout = ({children}) => {
   return (
     <html>
         <body>
-            <header className='header'>
+            <header>
               <Navbar/>
             </header>
           
