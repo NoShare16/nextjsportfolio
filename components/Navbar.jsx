@@ -94,8 +94,45 @@ const Navbar = () => {
                             </div>
 
                             {/* Kontakt Block */}
-                            <div className='bg-zinc-900 text-whitesmoke w-3/6 rounded-r-lg'>
-                                <h2 className='font-semibold text-3xl'>Kontakt Info</h2>
+                            <div className='bg-zinc-900 text-whitesmoke w-3/6 rounded-r-lg flex flex-col h-full'>
+                                <div className='flex justify-center py-6'>
+                                    <h2 className='font-semibold text-3xl'>Kontakt Info</h2>
+                                </div>
+
+                                <div className='w-full flex flex-col'>
+                                    <div className='flex justify-center'>
+                                        <Image 
+                                            src="/assets/logos/bxl-gmail.svg"
+                                            width={30}
+                                            height={30}
+                                            alt='mail icon'
+                                            className='bg-white rounded-lg'
+                                        />
+                                        <Link href="mailto:alex.wirschke18@gmail.com">alex.wirschke18@gmail.com</Link>
+                                    </div>
+
+                                    <div className='flex justify-center'>
+                                        <Image 
+                                            src="/assets/logos/bxs-phone.svg"
+                                            width={30}
+                                            height={30}
+                                            alt='phone icon'
+                                            className='bg-white rounded-lg'
+                                        />
+                                        <Link href="tel:+4917693502946">+49 176 93502946</Link>
+                                    </div>
+
+                                    <div className='flex justify-center'>
+                                        <Image 
+                                            src="/assets/logos/bxl-linkedin.svg"
+                                            width={30}
+                                            height={30}
+                                            alt='linked in icon'
+                                            className='bg-white rounded-lg'
+                                        />
+                                        <Link href="/">Linked In</Link>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
