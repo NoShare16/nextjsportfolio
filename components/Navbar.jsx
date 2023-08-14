@@ -50,7 +50,7 @@ const Navbar = () => {
                 <div className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-60 flex justify-center items-center z-50'>
 
                     {/* DESKTOP */}
-                    <div className="bg-white p-8 rounded-lg shadow-md relative hidden lg:block">
+                    <div className="bg-transparent rounded-lg shadow-md relative hidden lg:block w-4/6 h-4/6">
 
                         <div className='flex justify-end items-start'>
                             <Image 
@@ -59,33 +59,36 @@ const Navbar = () => {
                                 height={30}
                                 alt='close icon'
                                 onClick={() => setToggleForm(false)}
-                                className='cursor-pointer'
+                                className='cursor-pointer bg-white/90 rounded'
                             />
                         </div>
                         
-                        <div className='flex justify-between px-5 py-3'>
+                        <div className='flex justify-between px-5 py-3 h-full w-full'>
                             {/* Nachricht Block */}
                             <div className='bg-gray-900 text-whitesmoke w-3/6 rounded-l-lg'>
-                                <h2 className='font-semibold text-3xl'>Nachricht</h2>
+                                <div className='flex justify-center py-6'>
+                                    <h2 className='font-semibold text-3xl'>Nachricht</h2>
+                                </div>
+
                                 <form action="https://formsubmit.co/alex.wirschke18@gmail.com" method='POST'>
-                                    <div>
+                                    <div className='input-div'>
                                         <input type="text" placeholder='Name' required className='input-all'/>
                                     </div>
 
-                                    <div>
+                                    <div className='input-div'>
                                         <input type="text" placeholder='Email' required className='input-all'/>
                                     </div>
 
-                                    <div>
+                                    <div className='input-div'>
                                         <input type="text" placeholder='Betreff' required className='input-all'/>
                                     </div>
 
-                                    <div>
-                                        <textarea placeholder='Nachricht' name="" id="" cols="30" rows="10" required className='bg-transparent'></textarea>
+                                    <div className='input-div'>
+                                        <textarea placeholder='Nachricht' name="" id="" cols="30" rows="10" required className='input-all'></textarea>
                                     </div>
 
-                                    <div>
-                                        <button type='submit'>Senden</button>
+                                    <div className='flex justify-center py-6'>
+                                    <button type="submit" className="send-button">SENDEN</button>
                                     </div>
                                 </form>
                             </div>
