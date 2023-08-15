@@ -44,6 +44,9 @@
 .input-all {
     @apply bg-transparent text-xl py-4 w-full border-solid border-2 border-cyan-700 rounded mt-3 px-6
 }
+.input-all-mobile {
+    @apply bg-transparent text-sm py-2 w-full border-solid border-2 border-cyan-700 rounded mt-1 px-6
+}
 
 .input-div {
     @apply px-6

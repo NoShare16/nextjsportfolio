@@ -72,19 +72,19 @@ const Navbar = () => {
 
                                 <form action="https://formsubmit.co/alex.wirschke18@gmail.com" method='POST'>
                                     <div className='input-div'>
-                                        <input type="text" placeholder='Name' required className='input-all'/>
+                                        <input type="text" placeholder='Name' name='Name' required className='input-all'/>
                                     </div>
 
                                     <div className='input-div'>
-                                        <input type="text" placeholder='Email' required className='input-all'/>
+                                        <input type="email" placeholder='Email' name='Email' required className='input-all'/>
                                     </div>
 
                                     <div className='input-div'>
-                                        <input type="text" placeholder='Betreff' required className='input-all'/>
+                                        <input type="text" placeholder='Betreff' name='Betreff' required className='input-all'/>
                                     </div>
 
                                     <div className='input-div'>
-                                        <textarea placeholder='Nachricht' name="" id="" cols="30" rows="10" required className='input-all'></textarea>
+                                        <textarea placeholder='Nachricht' name="Nachricht" id="" cols="30" rows="10" required className='input-all'></textarea>
                                     </div>
 
                                     <div className='flex justify-center py-6'>
@@ -100,7 +100,7 @@ const Navbar = () => {
                                 </div>
 
                                 <div className='w-full flex flex-col'>
-                                    <div className='flex justify-center'>
+                                    <div className='flex justify-start text-2xl mt-32 px-6'>
                                         <Image 
                                             src="/assets/logos/bxl-gmail.svg"
                                             width={30}
@@ -108,10 +108,10 @@ const Navbar = () => {
                                             alt='mail icon'
                                             className='bg-white rounded-lg'
                                         />
-                                        <Link href="mailto:alex.wirschke18@gmail.com">alex.wirschke18@gmail.com</Link>
+                                        <Link href="mailto:alex.wirschke18@gmail.com" className='px-3'>alex.wirschke18@gmail.com</Link>
                                     </div>
 
-                                    <div className='flex justify-center'>
+                                    <div className='flex justify-start text-2xl mt-32 px-6'>
                                         <Image 
                                             src="/assets/logos/bxs-phone.svg"
                                             width={30}
@@ -119,10 +119,10 @@ const Navbar = () => {
                                             alt='phone icon'
                                             className='bg-white rounded-lg'
                                         />
-                                        <Link href="tel:+4917693502946">+49 176 93502946</Link>
+                                        <Link href="tel:+4917693502946" className='px-3'>+49 176 93502946</Link>
                                     </div>
 
-                                    <div className='flex justify-center'>
+                                    <div className='flex justify-start text-2xl mt-32 px-6'>
                                         <Image 
                                             src="/assets/logos/bxl-linkedin.svg"
                                             width={30}
@@ -130,7 +130,7 @@ const Navbar = () => {
                                             alt='linked in icon'
                                             className='bg-white rounded-lg'
                                         />
-                                        <Link href="/">Linked In</Link>
+                                        <Link href="https://www.linkedin.com/in/alex-wirschke-0551b8250/" target="_blank" rel="noopener noreferrer" className='px-3'>Linked In</Link>
                                     </div>
                                 </div>
                             </div>
@@ -141,7 +141,7 @@ const Navbar = () => {
 
 
                     {/* MOBILE */}
-                    <div className='lg:hidden bg-white p-8 rounded-lg shadow-md relative'>
+                    <div className='lg:hidden bg-transparent p-8 rounded-lg shadow-md relative w-full h-full mt-16'>
 
                         <div className='flex justify-end items-start'>
                             <Image 
@@ -150,9 +150,73 @@ const Navbar = () => {
                                 height={30}
                                 alt='close icon'
                                 onClick={() => setToggleForm(false)}
-                                className='cursor-pointer'
+                                className='cursor-pointer bg-white rounded'
                             />
                         </div>
+
+                        <div className='bg-gray-900 text-whitesmoke w-full rounded-lg'>
+                                <div className='flex justify-center py-6'>
+                                    <h2 className='font-semibold text-xl'>Nachricht</h2>
+                                </div>
+
+                                <form action="https://formsubmit.co/alex.wirschke18@gmail.com" method='POST'>
+                                    <div className='input-div'>
+                                        <input type="text" placeholder='Name' name='Name' required className='input-all-mobile'/>
+                                    </div>
+
+                                    <div className='input-div'>
+                                        <input type="email" placeholder='Email' name='Email' required className='input-all-mobile'/>
+                                    </div>
+
+                                    <div className='input-div'>
+                                        <input type="text" placeholder='Betreff' name='Betreff' required className='input-all-mobile'/>
+                                    </div>
+
+                                    <div className='input-div'>
+                                        <textarea placeholder='Nachricht' name="Nachricht" id="" cols="30" rows="5" required className='input-all-mobile'></textarea>
+                                    </div>
+
+                                    <div className='flex justify-center py-6'>
+                                    <button type="submit" className="send-button">SENDEN</button>
+                                    </div>
+                                </form>
+
+                                <div className='flex justify-around pb-6'>
+                                    <div>
+                                        <Link href="mailto:alex.wirschke18@gmail.com">
+                                            <Image 
+                                                src="/assets/logos/bxl-gmail.svg"
+                                                width={30}
+                                                height={30}
+                                                alt='mail icon'
+                                                className='bg-white rounded-lg'
+                                            />                                        
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <Link href="tel:+4917693502946">
+                                            <Image 
+                                                src="/assets/logos/bxs-phone.svg"
+                                                width={30}
+                                                height={30}
+                                                alt='phone icon'
+                                                className='bg-white rounded-lg'
+                                            />                                       
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <Link href="https://www.linkedin.com/in/alex-wirschke-0551b8250/" target="_blank" rel="noopener noreferrer">
+                                            <Image 
+                                                src="/assets/logos/bxl-linkedin.svg"
+                                                width={30}
+                                                height={30}
+                                                alt='linked in icon'
+                                                className='bg-white rounded-lg'
+                                            />                                        
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
 
                     </div>
                 </div>
