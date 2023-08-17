@@ -9,7 +9,7 @@ const Home = () => {
             fill
             quality={100}
             className='hidden md:block pointer-events-none select-none z-0'
-            src={"/assets/images/HeroPhone.png"}
+            src={"/assets/images/heroPhone.png"}
             alt='Hero Phone Image'
             style={{objectFit: 'cover', objectPosition: '95%'}}
         />
