@@ -24,7 +24,7 @@ const Navbar = () => {
             <nav className='lg:hidden flex relative'>
                 <div className='flex'>
                     <Image
-                        src="/assets/images/menu.png"
+                        src={"/assets/images/menu.png"}
                         width={30}
                         height={30}
                         alt='menu'
@@ -54,7 +54,7 @@ const Navbar = () => {
 
                         <div className='flex justify-end items-start'>
                             <Image 
-                                src="/assets/images/x.png"
+                                src={"/assets/images/x.png"}
                                 width={30}
                                 height={30}
                                 alt='close icon'
@@ -102,7 +102,7 @@ const Navbar = () => {
                                 <div className='w-full flex flex-col'>
                                     <div className='flex justify-start text-2xl mt-32 px-6'>
                                         <Image 
-                                            src="/assets/logos/bxl-gmail.svg"
+                                            src={"/assets/logos/bxl-gmail.svg"}
                                             width={30}
                                             height={30}
                                             alt='mail icon'
@@ -113,7 +113,7 @@ const Navbar = () => {
 
                                     <div className='flex justify-start text-2xl mt-32 px-6'>
                                         <Image 
-                                            src="/assets/logos/bxs-phone.svg"
+                                            src={"/assets/logos/bxs-phone.svg"}
                                             width={30}
                                             height={30}
                                             alt='phone icon'
@@ -124,7 +124,7 @@ const Navbar = () => {
 
                                     <div className='flex justify-start text-2xl mt-32 px-6'>
                                         <Image 
-                                            src="/assets/logos/bxl-linkedin.svg"
+                                            src={"/assets/logos/bxl-linkedin.svg"}
                                             width={30}
                                             height={30}
                                             alt='linked in icon'
@@ -145,7 +145,7 @@ const Navbar = () => {
 
                         <div className='flex justify-end items-start'>
                             <Image 
-                                src="/assets/images/x.png"
+                                src={"/assets/images/x.png"}
                                 width={30}
                                 height={30}
                                 alt='close icon'
@@ -185,7 +185,7 @@ const Navbar = () => {
                                     <div>
                                         <Link href="mailto:alex.wirschke18@gmail.com">
                                             <Image 
-                                                src="/assets/logos/bxl-gmail.svg"
+                                                src={"/assets/logos/bxl-gmail.svg"}
                                                 width={30}
                                                 height={30}
                                                 alt='mail icon'
@@ -196,7 +196,7 @@ const Navbar = () => {
                                     <div>
                                         <Link href="tel:+4917693502946">
                                             <Image 
-                                                src="/assets/logos/bxs-phone.svg"
+                                                src={"/assets/logos/bxs-phone.svg"}
                                                 width={30}
                                                 height={30}
                                                 alt='phone icon'
@@ -207,7 +207,7 @@ const Navbar = () => {
                                     <div>
                                         <Link href="https://www.linkedin.com/in/alex-wirschke-0551b8250/" target="_blank" rel="noopener noreferrer">
                                             <Image 
-                                                src="/assets/logos/bxl-linkedin.svg"
+                                                src={"/assets/logos/bxl-linkedin.svg"}
                                                 width={30}
                                                 height={30}
                                                 alt='linked in icon'
