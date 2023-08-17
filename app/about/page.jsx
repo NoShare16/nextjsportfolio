@@ -11,7 +11,7 @@ const About = () => {
             fill
             quality={100}
             className='hidden md:block pointer-events-none select-none z-0'
-            src="/assets/images/hoodedHacker.jpg"
+            src={"/assets/images/hoodedHacker.jpg"}
             alt='Hero Phone Image'
             style={{objectFit: 'cover', objectPosition: '95%'}}
         />
