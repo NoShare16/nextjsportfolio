@@ -15,7 +15,7 @@ const Navbar = () => {
             <nav className='hidden lg:block'>
                 <Link href="/" className='navbar-links'>Home</Link>
                 <Link href="/" className='navbar-links'>Über mich</Link>
-                <Link href="/" className='navbar-links'>Download CV</Link>
+                <a href="/assets/images/LebenslaufAugust2023.pdf" download className='navbar-links'>Download CV</a>
                 <Link href="/" className='navbar-links'>Projekte</Link>
                 <button  className='navbar-links' onClick={() => setToggleForm((prev) => !prev)}>Kontakt</button>
             </nav>

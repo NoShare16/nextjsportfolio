@@ -25,6 +25,9 @@ const Home = () => {
                 </p>
             </div>
             {/* Download CV Button */}
+            <div className='mt-3 flex justify-start ml-3'>
+            <a href="/assets/images/LebenslaufAugust2023.pdf" download className='download-cv '>Lebenslauf runterladen</a>
+            </div>
         </div>
     </section>
   )
