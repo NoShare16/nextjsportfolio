@@ -21,7 +21,7 @@ const Home = () => {
                     Alexander Wirschke
                 </h1>
                 <p className='text-white text-lg max-w-xl'>
-                Hallo, ich bin Alex und bin 23 Jahre alt. Ich liebe Programmieren und arbeite gerne mit Javascript, Tailwind CSS, NextJS und Python. Zurzeit bin ich auf der Suche nach spannenden Projekten und Möglichkeiten, bei denen ich meine Fähigkeiten und Leidenschaft für die Programmierung einbringen kann.
+                Hallo, ich bin Alex und bin 23 Jahre alt. Ich liebe Programmieren und arbeite gerne mit Javascript, React, Tailwind CSS, NextJS und Python. Zurzeit bin ich auf der Suche nach spannenden Projekten und Möglichkeiten, bei denen ich meine Fähigkeiten und Leidenschaft für die Programmierung einbringen kann.
                 </p>
             </div>
             {/* Download CV Button */}
