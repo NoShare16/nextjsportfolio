@@ -9,7 +9,7 @@ const Navbar = () => {
     const [toggleForm, setToggleForm] = useState(false);
   return (
     <>
-        <section className='header'>
+        <section className='header md:bg-transparent'>
         <a href="/" className="logo">Alexander.</a>
                 {/* DESKTOP */}
             <nav className='hidden lg:block'>
@@ -59,7 +59,7 @@ const Navbar = () => {
                                 height={30}
                                 alt='close icon'
                                 onClick={() => setToggleForm(false)}
-                                className='cursor-pointer bg-white/90 rounded'
+                                className='cursor-pointer bg-white/90 rounded z-50'
                             />
                         </div>
                         
