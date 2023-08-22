@@ -16,7 +16,7 @@ const Navbar = () => {
                 <Link href="/" className='navbar-links'>Home</Link>
                 <Link href="/about" className='navbar-links'>Über mich</Link>
                 <a href="/assets/images/LebenslaufAugust2023.pdf" download className='navbar-links'>Download CV</a>
-                <a href="https://github.com/NoShare16?tab=repositories" className='navbar-links' target="_blank" rel="noopener noreferrer">Projekte</a>
+                <Link href="/projects" className='navbar-links'>Projekte</Link>
                 <button  className='navbar-links' onClick={() => setToggleForm((prev) => !prev)}>Kontakt</button>
             </nav>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
                         <div className='dropdown'>
                             <Link href="/about" onClick={() => setToggleDropdown(false)} className='dropdown_link'>Über Mich</Link>
                             <Link href="/" onClick={() => setToggleDropdown(false)} className='dropdown_link'>Lebenslauf</Link>
-                            <a href="https://github.com/NoShare16?tab=repositories" onClick={() => setToggleDropdown(false)} className='dropdown_link' target="_blank" rel="noopener noreferrer">Projects</a>
+                            <Link href="/projects" onClick={() => setToggleDropdown(false)} className='dropdown_link'>Projects</Link>
                             <button onClick={() => {setToggleDropdown(false); setToggleForm(true);}} className='dropdown_link'>Kontakt</button>
                         </div>
                     )}
