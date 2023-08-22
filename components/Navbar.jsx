@@ -16,7 +16,7 @@ const Navbar = () => {
                 <Link href="/" className='navbar-links'>Home</Link>
                 <Link href="/about" className='navbar-links'>Über mich</Link>
                 <a href="/assets/images/LebenslaufAugust2023.pdf" download className='navbar-links'>Download CV</a>
-                <a href="https://github.com/NoShare16?tab=repositories" className='navbar-links' target="_blank" rel="noopener noreferrer">Projekte</a>
+                <Link href="/projects" className='navbar-links'>Projekte</Link>
                 <button  className='navbar-links' onClick={() => setToggleForm((prev) => !prev)}>Kontakt</button>
             </nav>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
                         <div className='dropdown'>
                             <Link href="/about" onClick={() => setToggleDropdown(false)} className='dropdown_link'>Über Mich</Link>
                             <Link href="/" onClick={() => setToggleDropdown(false)} className='dropdown_link'>Lebenslauf</Link>
-                            <a href="https://github.com/NoShare16?tab=repositories" onClick={() => setToggleDropdown(false)} className='dropdown_link' target="_blank" rel="noopener noreferrer">Projects</a>
+                            <Link href="/projects" onClick={() => setToggleDropdown(false)} className='dropdown_link'>Projects</Link>
                             <button onClick={() => {setToggleDropdown(false); setToggleForm(true);}} className='dropdown_link'>Kontakt</button>
                         </div>
                     )}
@@ -108,7 +108,7 @@ const Navbar = () => {
                                             alt='mail icon'
                                             className='bg-white rounded-lg'
                                         />
-                                        <Link href="mailto:alex.wirschke18@gmail.com" className='px-3'>alex.wirschke18@gmail.com</Link>
+                                        <a href="mailto:alex.wirschke18@gmail.com" className='px-3'>alex.wirschke18@gmail.com</a>
                                     </div>
 
                                     <div className='flex justify-start text-2xl mt-32 px-6'>
@@ -119,7 +119,7 @@ const Navbar = () => {
                                             alt='phone icon'
                                             className='bg-white rounded-lg'
                                         />
-                                        <Link href="tel:+4917693502946" className='px-3'>+49 176 93502946</Link>
+                                        <a href="tel:+4917693502946" className='px-3'>+49 176 93502946</a>
                                     </div>
 
                                     <div className='flex justify-start text-2xl mt-32 px-6'>
@@ -130,7 +130,18 @@ const Navbar = () => {
                                             alt='linked in icon'
                                             className='bg-white rounded-lg'
                                         />
-                                        <Link href="https://www.linkedin.com/in/alex-wirschke-0551b8250/" target="_blank" rel="noopener noreferrer" className='px-3'>Linked In</Link>
+                                        <a href="https://www.linkedin.com/in/alex-wirschke-0551b8250/" target="_blank" rel="noopener noreferrer" className='px-3'>linked In</a>
+                                    </div>
+
+                                    <div className='flex justify-start text-2xl mt-32 px-6'>
+                                        <Image 
+                                            src={"/assets/images/githubLogo.png"}
+                                            width={30}
+                                            height={30}
+                                            alt='Github Logo'
+                                            className='bg-white rounded-lg'
+                                        />
+                                        <a href="https://github.com/NoShare16" target="_blank" rel="noopener noreferrer" className='px-3'>GitHub</a>
                                     </div>
                                 </div>
                             </div>
@@ -183,7 +194,7 @@ const Navbar = () => {
 
                                 <div className='flex justify-around pb-6'>
                                     <div>
-                                        <Link href="mailto:alex.wirschke18@gmail.com">
+                                        <a href="mailto:alex.wirschke18@gmail.com">
                                             <Image 
                                                 src={"/assets/logos/bxl-gmail.svg"}
                                                 width={30}
@@ -191,10 +202,10 @@ const Navbar = () => {
                                                 alt='mail icon'
                                                 className='bg-white rounded-lg'
                                             />                                        
-                                        </Link>
+                                        </a>
                                     </div>
                                     <div>
-                                        <Link href="tel:+4917693502946">
+                                        <a href="tel:+4917693502946">
                                             <Image 
                                                 src={"/assets/logos/bxs-phone.svg"}
                                                 width={30}
@@ -202,10 +213,10 @@ const Navbar = () => {
                                                 alt='phone icon'
                                                 className='bg-white rounded-lg'
                                             />                                       
-                                        </Link>
+                                        </a>
                                     </div>
                                     <div>
-                                        <Link href="https://www.linkedin.com/in/alex-wirschke-0551b8250/" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://www.linkedin.com/in/alex-wirschke-0551b8250/" target="_blank" rel="noopener noreferrer">
                                             <Image 
                                                 src={"/assets/logos/bxl-linkedin.svg"}
                                                 width={30}
@@ -213,7 +224,18 @@ const Navbar = () => {
                                                 alt='linked in icon'
                                                 className='bg-white rounded-lg'
                                             />                                        
-                                        </Link>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://github.com/NoShare16" target="_blank" rel="noopener noreferrer">
+                                            <Image 
+                                                src={"/assets/images/githubLogo.png"}
+                                                width={30}
+                                                height={30}
+                                                alt='Github Logo'
+                                                className='bg-white rounded-lg'
+                                            />                                        
+                                        </a>
                                     </div>
                                 </div>
                             </div>
