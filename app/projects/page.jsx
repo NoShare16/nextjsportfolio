@@ -22,7 +22,7 @@ const Projects = () => {
                     Meine Projekte<span className='text-purple-500 md:text-7xl'>.</span>
                 </h1>
                 <p className='text-white text-base max-w-xl md:text-xl'>
-                Seit Beginn meiner Programmier-Reise habe ich viel gelernt und eigene Projekte entwickelt. Ich arbeite selbstständig, liebe neue Herausforderungen und wachse mit jedem Code, den ich schreibe. Hier sind einige meiner Werke.
+                Seit Beginn meiner Programmier-Reise habe ich viel gelernt und eigene Projekte entwickelt. Ich arbeite selbstständig, liebe neue Herausforderungen und wachse mit jedem Code, den ich schreibe. Hier sind einige GitHub Links meiner Werke.
                 </p>
 
 
