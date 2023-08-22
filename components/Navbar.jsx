@@ -130,7 +130,7 @@ const Navbar = () => {
                                             alt='linked in icon'
                                             className='bg-white rounded-lg'
                                         />
-                                        <a href="https://www.linkedin.com/in/alex-wirschke-0551b8250/" target="_blank" rel="noopener noreferrer" className='px-3'>linked In</a>
+                                        <a href="https://www.linkedin.com/in/alex-wirschke-0551b8250/" target="_blank" rel="noopener noreferrer" className='px-3'>Linked In</a>
                                     </div>
 
                                     <div className='flex justify-start text-2xl mt-32 px-6'>
