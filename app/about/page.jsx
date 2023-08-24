@@ -25,7 +25,7 @@ const About = () => {
                 <p className='text-white text-lg md:text-xl max-w-xl md:leading-relaxed'>
                     Als jemand, der in einer digitalisierten Welt aufgewachsen ist, war ich schon immer fasziniert von der Technologie und den endlosen Möglichkeiten, die sie bietet. Deshalb habe ich mich entschieden, meine Leidenschaft für das Programmieren zu einer beruflichen Fähigkeit zu machen. <br /> <br />
                     In meiner Freizeit gehe ich zum Fitness, um gesund und fit zu bleiben, und ich spiele auch gerne ab und zu Videospiele, um mich zu entspannen. <br /> <br />
-                    Ich bin begeistert von der Herausforderung, Probleme mit dem Codieren zu lösen und elegante, effiziente Lösungen zu erstellen. Durch meine Leidenschaft und meine Fähigkeiten in der Programmierung bin ich überzeugt, dass ich einen wertvollen Beitrag zu jedem Projekt leisten kann.
+                    Ich bin begeistert von der Herausforderung, Probleme mit dem Codieren zu lösen und elegante, effiziente Lösungen zu erstellen. Außerdem sind Scrum und Kanban keine Fremdwörter für mich! Durch meine Leidenschaft und meine Fähigkeiten in der Programmierung bin ich überzeugt, dass ich einen wertvollen Beitrag zu jedem Projekt leisten kann.
                 </p>
             </div>          
         </div>
