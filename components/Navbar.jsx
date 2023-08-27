@@ -15,7 +15,7 @@ const Navbar = () => {
             <nav className='hidden lg:block'>
                 <Link href="/" className='navbar-links'>Home</Link>
                 <Link href="/about" className='navbar-links'>Über mich</Link>
-                <a href="/assets/images/LebenslaufAugust2023.pdf" download className='navbar-links'>Download CV</a>
+                <a href="/assets/images/Coursera1stCertificate.pdf" download className='navbar-links'>Zertifikate <Image src={"/assets/images/download-solid-24.png"} width={20} height={20} className='bg-white rounded inline'/></a>
                 <Link href="/projects" className='navbar-links'>Projekte</Link>
                 <button  className='navbar-links' onClick={() => setToggleForm((prev) => !prev)}>Kontakt</button>
             </nav>
@@ -35,7 +35,7 @@ const Navbar = () => {
                     {toggleDropdown && (
                         <div className='dropdown'>
                             <Link href="/about" onClick={() => setToggleDropdown(false)} className='dropdown_link'>Über Mich</Link>
-                            <Link href="/" onClick={() => setToggleDropdown(false)} className='dropdown_link'>Lebenslauf</Link>
+                            <a href="/assets/images/Coursera1stCertificate.pdf" download onClick={() => setToggleDropdown(false)} className='dropdown_link'>Zertifikate <Image src={"/assets/images/download-solid-24.png"} width={20} height={20} className='inline'/></a>
                             <Link href="/projects" onClick={() => setToggleDropdown(false)} className='dropdown_link'>Projects</Link>
                             <button onClick={() => {setToggleDropdown(false); setToggleForm(true);}} className='dropdown_link'>Kontakt</button>
                         </div>
