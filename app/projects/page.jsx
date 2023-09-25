@@ -54,12 +54,12 @@ const Projects = () => {
             </div>
 
             <div>
-                <a href="https://github.com/NoShare16/NoShare16.github.io" target="_blank" rel="noopener noreferrer">
+                <a href="https://ai-prompt-collection.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <div className="relative overflow-hidden rounded-xl transition duration-300 ease-in-out transform hover:scale-105">
-                        <Image src="/assets/images/PersonTalkingAi.jpg" alt="Link to Github" width={500} height={500} />
+                        <Image src="/assets/images/PersonTalkingAi.jpg" alt="Person talking to robot" width={500} height={500} />
 
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-                            <span className="text-white text-xl md:text-3xl">My first Portfolio</span>
+                            <span className="text-white text-xl md:text-3xl">Ai Prompt Collection</span>
                         </div>
                     </div>
                 </a>
