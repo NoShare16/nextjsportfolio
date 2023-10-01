@@ -14,11 +14,10 @@ const Dropdown = () => {
       <nav className="lg:hidden flex relative">
         <div className="flex">
           <Image
-            src={"/assets/images/menu.png"}
+            src={"/assets/logos/hamburger-menu.svg"}
             width={30}
             height={30}
             alt="menu"
-            className="bg-white rounded"
             onClick={() => setToggleDropdown((prev) => !prev)}
           />
 

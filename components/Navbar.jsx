@@ -25,10 +25,10 @@ const Navbar = () => {
           >
             Zertifikate{" "}
             <Image
-              src={"/assets/images/download-solid-24.png"}
+              src={"/assets/logos/download-ededed.svg"}
               width={20}
               height={20}
-              className="bg-white rounded inline"
+              className="inline"
             />
           </a>
           <Link href="/projects" className="navbar-links">

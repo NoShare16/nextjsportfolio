@@ -103,7 +103,6 @@ const Form = (props) => {
                       width={30}
                       height={30}
                       alt="mail icon"
-                      className="bg-white rounded-lg"
                     />
                     <a href="mailto:alex.wirschke18@gmail.com" className="px-3">
                       alex.wirschke18@gmail.com
@@ -116,7 +115,6 @@ const Form = (props) => {
                       width={30}
                       height={30}
                       alt="phone icon"
-                      className="bg-white rounded-lg"
                     />
                     <a href="tel:+4917693502946" className="px-3">
                       +49 176 93502946
@@ -129,7 +127,6 @@ const Form = (props) => {
                       width={30}
                       height={30}
                       alt="linked in icon"
-                      className="bg-white rounded-lg"
                     />
                     <a
                       href="https://www.linkedin.com/in/alex-wirschke-0551b8250/"
@@ -143,11 +140,10 @@ const Form = (props) => {
 
                   <div className="flex justify-start text-2xl mt-32 px-6">
                     <Image
-                      src={"/assets/images/githubLogo.png"}
+                      src={"/assets/logos/github.svg"}
                       width={30}
                       height={30}
                       alt="Github Logo"
-                      className="bg-white rounded-lg"
                     />
                     <a
                       href="https://github.com/NoShare16"
@@ -165,19 +161,17 @@ const Form = (props) => {
 
           {/* MOBILE */}
           <div className="lg:hidden bg-transparent p-8 rounded-lg shadow-md relative w-full h-full mt-16">
-            <div className="flex justify-end items-start">
-              <Image
-                src={"/assets/images/x.png"}
-                width={30}
-                height={30}
-                alt="close icon"
-                onClick={() => setToggleForm(false)}
-                className="cursor-pointer bg-white rounded"
-              />
-            </div>
-
             <div className="bg-gray-900 text-whitesmoke w-full rounded-lg">
-              <div className="flex justify-center py-6">
+              <div className="flex justify-end items-start">
+                <Image
+                  src={"/assets/logos/x.svg"}
+                  width={40}
+                  height={40}
+                  alt="close icon"
+                  onClick={() => setToggleForm(false)}
+                />
+              </div>
+              <div className="flex justify-center pb-6">
                 <h2 className="font-semibold text-xl">Nachricht</h2>
               </div>
 
@@ -242,7 +236,6 @@ const Form = (props) => {
                       width={30}
                       height={30}
                       alt="mail icon"
-                      className="bg-white rounded-lg"
                     />
                   </a>
                 </div>
@@ -253,7 +246,6 @@ const Form = (props) => {
                       width={30}
                       height={30}
                       alt="phone icon"
-                      className="bg-white rounded-lg"
                     />
                   </a>
                 </div>
@@ -268,7 +260,6 @@ const Form = (props) => {
                       width={30}
                       height={30}
                       alt="linked in icon"
-                      className="bg-white rounded-lg"
                     />
                   </a>
                 </div>
@@ -279,11 +270,10 @@ const Form = (props) => {
                     rel="noopener noreferrer"
                   >
                     <Image
-                      src={"/assets/images/githubLogo.png"}
+                      src={"/assets/logos/github.svg"}
                       width={30}
                       height={30}
                       alt="Github Logo"
-                      className="bg-white rounded-lg"
                     />
                   </a>
                 </div>
