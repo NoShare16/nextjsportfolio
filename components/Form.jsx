@@ -37,7 +37,7 @@ const Form = (props) => {
                 </div>
 
                 <form
-                  action="https://formsubmit.co/alex.wirschke18@gmail.com"
+                  action="https://formsubmit.co/f5a4c6191239052001f3475ceec450ec"
                   method="POST"
                 >
                   <div className="input-div">
@@ -176,7 +176,7 @@ const Form = (props) => {
               </div>
 
               <form
-                action="https://formsubmit.co/alex.wirschke18@gmail.com"
+                action="https://formsubmit.co/f5a4c6191239052001f3475ceec450ec"
                 method="POST"
               >
                 <div className="input-div">
