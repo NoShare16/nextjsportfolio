@@ -75,7 +75,7 @@ const Form = (props) => {
                       placeholder="Nachricht"
                       name="Nachricht"
                       id=""
-                      cols="30"
+                      cols="20"
                       rows="10"
                       required
                       className="input-all"
