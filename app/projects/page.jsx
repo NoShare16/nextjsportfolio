@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Projects = () => {
   return (
-    <section className="relative w-full min-h-screen md:min-h-screen flex md:block flex-col justify-center bg-black">
+    <section className="relative w-full min-h-screen md:h-screen flex md:block flex-col justify-center bg-black">
       <Image
         priority
         fill

@@ -15,10 +15,10 @@ const Form = (props) => {
       </button>
 
       {toggleForm && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-60 flex justify-center items-center z-50">
+        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-60 flex justify-center z-50">
           {/* DESKTOP */}
-          <div className="bg-transparent rounded-lg shadow-md relative hidden lg:block w-4/6 h-4/6">
-            <div className="flex justify-end items-start">
+          <div className="bg-transparent rounded-lg shadow-md relative hidden lg:block w-4/6 max-h-screen overflow-y-auto">
+            <div className="flex justify-end items-start p-2">
               <Image
                 src={"/assets/images/x.png"}
                 width={30}
@@ -29,9 +29,9 @@ const Form = (props) => {
               />
             </div>
 
-            <div className="flex justify-between px-5 py-3 h-full w-full">
+            <div className="flex justify-between px-5 py-3 w-full bg-zinc-900 rounded-l-lg">
               {/* Nachricht Block */}
-              <div className="bg-gray-900 text-whitesmoke w-3/6 rounded-l-lg">
+              <div className=" text-whitesmoke w-3/6 rounded-l-lg p-6">
                 <div className="flex justify-center py-6">
                   <h2 className="font-semibold text-3xl">Nachricht</h2>
                 </div>
@@ -74,8 +74,7 @@ const Form = (props) => {
                     <textarea
                       placeholder="Nachricht"
                       name="Nachricht"
-                      id=""
-                      cols="20"
+                      cols="30"
                       rows="10"
                       required
                       className="input-all"
@@ -91,13 +90,13 @@ const Form = (props) => {
               </div>
 
               {/* Kontakt Block */}
-              <div className="bg-zinc-900 text-whitesmoke w-3/6 rounded-r-lg flex flex-col h-full">
+              <div className=" text-whitesmoke w-3/6 rounded-r-lg flex flex-col h-full p-6">
                 <div className="flex justify-center py-6">
                   <h2 className="font-semibold text-3xl">Kontakt Info</h2>
                 </div>
 
                 <div className="w-full flex flex-col">
-                  <div className="flex justify-start text-2xl mt-32 px-6">
+                  <div className="flex justify-start text-2xl mt-10 px-6">
                     <Image
                       src={"/assets/logos/bxl-gmail.svg"}
                       width={30}
@@ -109,7 +108,7 @@ const Form = (props) => {
                     </a>
                   </div>
 
-                  <div className="flex justify-start text-2xl mt-32 px-6">
+                  <div className="flex justify-start text-2xl mt-10 px-6">
                     <Image
                       src={"/assets/logos/bxs-phone.svg"}
                       width={30}
@@ -121,7 +120,7 @@ const Form = (props) => {
                     </a>
                   </div>
 
-                  <div className="flex justify-start text-2xl mt-32 px-6">
+                  <div className="flex justify-start text-2xl mt-10 px-6">
                     <Image
                       src={"/assets/logos/bxl-linkedin.svg"}
                       width={30}
@@ -138,7 +137,7 @@ const Form = (props) => {
                     </a>
                   </div>
 
-                  <div className="flex justify-start text-2xl mt-32 px-6">
+                  <div className="flex justify-start text-2xl mt-10 px-6">
                     <Image
                       src={"/assets/logos/github.svg"}
                       width={30}
@@ -160,8 +159,8 @@ const Form = (props) => {
           </div>
 
           {/* MOBILE */}
-          <div className="lg:hidden bg-transparent p-8 rounded-lg shadow-md relative w-full h-full mt-16">
-            <div className="bg-gray-900 text-whitesmoke w-full rounded-lg">
+          <div className="lg:hidden bg-transparent p-8 rounded-lg shadow-md relative w-full min-h-screen overflow-y-auto mt-16">
+            <div className="bg-gray-900 text-whitesmoke w-full rounded-lg p-6">
               <div className="flex justify-end items-start">
                 <Image
                   src={"/assets/logos/x.svg"}
@@ -169,6 +168,7 @@ const Form = (props) => {
                   height={40}
                   alt="close icon"
                   onClick={() => setToggleForm(false)}
+                  className="cursor-pointer"
                 />
               </div>
               <div className="flex justify-center pb-6">
@@ -213,7 +213,6 @@ const Form = (props) => {
                   <textarea
                     placeholder="Nachricht"
                     name="Nachricht"
-                    id=""
                     cols="30"
                     rows="5"
                     required

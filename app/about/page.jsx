@@ -3,15 +3,15 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="relative w-full min-h-screen md:min-h-screen flex md:block flex-col justify-center bg-black">
+    <section className="relative w-full min-h-screen md:h-screen flex md:block flex-col justify-center bg-black">
       <Image
         priority
         fill
         quality={100}
         className="hidden md:block pointer-events-none select-none z-0"
         src={"/assets/images/hoodedHacker.jpg"}
-        alt="Hero Phone Image"
-        style={{ objectFit: "cover", objectPosition: "95%" }}
+        alt="Hacker Image"
+        style={{ objectFit: "cover" }}
       />
 
       <div className="relative z-10 pt-3 md:pt-0 md:top-1/4 lg:top-1/3 max-w-7xl mx-auto">
